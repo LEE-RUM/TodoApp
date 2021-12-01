@@ -1,0 +1,28 @@
+body{
+   background-color: #fafafa;
+}
+
+.not-completed {
+   background-color: white;
+   border-radius: .25rem;
+   padding: 10px 10px;
+   margin: 10px 10px;
+   border: 1px solid silver;
+}
+
+.completed {
+   background-color: #eeeeee;
+   border-radius: .25rem;
+   padding: 10px 10px;
+   margin: 10px 10px;
+   border: 1px solid silver;
+}
+
+#taskb{
+   background-color: rgba(254, 105, 147, 0.1);
+   color: #fe6993;
+   border-radius: 3px;
+   padding: .2em;
+   line-height: 2em;
+}
+

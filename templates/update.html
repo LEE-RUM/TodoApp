@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    To-do-list
+{% endblock %}
+
+{% block body %}
+
+    <div class="card">
+
+        <div class="card-header">
+            Update Task
+        </div>
+
+        <div class="card-body">
+
+            <form method="post" action="">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-9 col-lg-10">
+
+                        {{ form.task_name.label }}
+                        {{ form.task_name }}
+                    </div>
+
+                    <div class="col-3 col-lg-2">
+                        {{ form.completed.label }}
+                        <div class="form-check form-switch">
+                            {{ form.completed }}
+                        </div>
+                    </div>
+
+                    <div class="row my-3">
+                        <div class="col">
+                            <a href="{% url 'index' %}" class="btn btn-info text-white"> <-Go Back</a>
+                            <button type="submit" class="btn btn-primary">Update</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+{% endblock %}
